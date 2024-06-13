@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cp -a src/. build",
-    "deploy": "aws s3 cp build/. s3://guineapigs/ --recursive --profile deployagent"
+    "deploy": "aws s3 cp build/. s3://guineapigs/ --recursive"
   },
   "repository": {
     "type": "git",
