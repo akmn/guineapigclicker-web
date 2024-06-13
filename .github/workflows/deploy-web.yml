@@ -2,7 +2,7 @@ name: deploy-web
 run-name: ${{ github.actor }} is deploying web
 on: [push]
 env:
-  AWS_REGION : "<example-aws-region>"
+  AWS_REGION : "us-east-1"
 permissions:
   id-token: write # This is required for requesting the JWT
   contents: read  # This is required for actions/checkout
