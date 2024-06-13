@@ -1,0 +1,21 @@
+{
+  "name": "guineapigclicker-web",
+  "version": "1.0.0",
+  "description": "Hello world readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp -a src/. build",
+    "deploy": "aws s3 cp ./build s3://app.example.com --recursive --exclude \"*.DS_Store\" --cache-control public,max-age=604800 --profile production-profile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmn/guineapigclicker-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmn/guineapigclicker-web/issues"
+  },
+  "homepage": "https://github.com/akmn/guineapigclicker-web#readme"
+}
