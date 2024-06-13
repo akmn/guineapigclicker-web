@@ -1,8 +1,8 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: deploy-web
+run-name: ${{ github.actor }} is deploying web
 on: [push]
 jobs:
-  check-bats-version:
+  deploy-web:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
